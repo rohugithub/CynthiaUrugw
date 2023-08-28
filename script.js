@@ -97,3 +97,23 @@ tl.from("#sec1>h4",{
   delay:.2
 
 })
+
+
+let main= document.querySelector("#main")
+let cursor =document.querySelector("#cursor")
+
+let imagess = document.querySelector("img")
+main.addEventListener("mousemove",function(dets){
+  cursor.style.left=dets.x +"px"
+  cursor.style.top=dets.y+"px"
+})
+
+
+
+imagess.addEventListener("mouseenter",function(){
+  cursor.style.scale=2.5
+})
+
+imagess.addEventListener("mouseleave",function(){
+  cursor.style.scale=1
+})

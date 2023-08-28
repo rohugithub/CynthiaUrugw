@@ -21,6 +21,15 @@ html,body{
     overflow-y: hidden;
 }
 
+#cursor{
+    height:12px;
+    width: 12px;
+    background-color:#FFFFFF;
+    position: absolute;
+    z-index: 999999;
+    border-radius: 50px;
+}
+
 #page1{
     height: 130vh;
     width: 100vw;
@@ -362,6 +371,7 @@ html,body{
     display: flex;
     align-items: flex-end;
     justify-content:space-between;
+    position: relative;
     
 }
 
@@ -380,10 +390,14 @@ html,body{
 
 #footer-bottom-part1{
     margin-right:50px;
-    /* position: relative; */
+  height: 50px;
+  width: 500px;
+ /* background-color: aqua; */
+    position: relative;
     display: flex;
     align-items: center;
     justify-content:space-between;
+    
 }
 
 #footer-bottom-part1>h4::after{
@@ -422,3 +436,119 @@ html,body{
     margin-left: 50px;  
 }
 
+#nav>h2{
+    font-size: 18px;
+    font-family: regular;
+    color: #FFF;
+    text-transform:uppercase ;
+}
+
+@media (max-width:500px) {
+    #nav-part1{
+        display: none;
+    }
+
+    #nav>h2{
+        display: block ;
+    }
+    
+
+
+    #page1-part1>h1{
+        font-size: 60px;
+    }
+
+    #page1-part1>h2{
+        font-size: 60px;
+        line-height: 170px;
+    }
+   
+
+    #page1-part1>h6{
+        font-size: 13px;
+        color: #FFFFFF;
+        
+    }
+    
+    #sec1>h2{
+        font-size: 12px;
+        width: 20%;
+        position: relative;
+        top: 50%;
+    }
+
+    #sec1>h3{
+        font-size: 12px;
+        width: 20%;
+        position: relative;
+        top: 50%;
+    }
+
+
+    #sec1>h4{
+        font-size: 14px;
+        width:55%;  
+        color: #FFFFFF;
+    }
+
+
+    #circle-arrow{
+        display: none;
+    }
+
+    .page2-part{
+        height: 20vh;
+        position: relative;
+        top: 80px;
+    }
+
+    .page2-part>h1{
+          font-size: 50px;
+    }
+
+    #circle-img{
+         position: absolute; 
+          top: -40%;    
+          left: 13%;
+          /* transform: translateX(-50%,-50%); */
+          height: 270px;
+          width: 270px;
+     } 
+
+     #footer>h4{
+        position: absolute;
+        left: 20px;font-size: 11px;
+     }
+
+     #footer>p{
+        position: absolute;
+        left: 20px;
+        font-size: 15px;
+        width: 82%;
+        line-height: 23px;
+     }
+
+     #footer>button{
+        font-size: 12px;
+        margin-top: 35px;
+        margin-left: -200px;
+     }
+
+     #footer-bottom-part1>h4{
+        font-size: 15px;
+        position: relative;
+        top: -50px;
+        left: -140px;
+        
+     }
+    
+     #footer-bottom-part2>h5{
+        font-size: 10px;
+        width: 10%;
+        
+     }
+     #cursor{
+        display: none;
+     }
+      
+}
